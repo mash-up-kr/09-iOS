@@ -10,6 +10,7 @@
 		43113B434EF0537D13D5D878 /* Pods_mashup09.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDAF762678E4AD5D82733841 /* Pods_mashup09.framework */; };
 		827C37E120E792F70050FA68 /* Input.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 827C37E020E792F70050FA68 /* Input.storyboard */; };
 		827C37E320E793290050FA68 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827C37E220E793290050FA68 /* InputViewController.swift */; };
+		829DB82E20E7ACB0005E7ECE /* InputTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829DB82D20E7ACB0005E7ECE /* InputTableViewController.swift */; };
 		EF3E94BD20E7952E00ECF5CB /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3E94BB20E7952E00ECF5CB /* HomeCollectionViewCell.swift */; };
 		EF3E94BE20E7952E00ECF5CB /* HomeCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3E94BC20E7952E00ECF5CB /* HomeCollectionTableViewCell.swift */; };
 		EF3E94C020E7968B00ECF5CB /* Home09ItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3E94BF20E7968B00ECF5CB /* Home09ItemsTableViewCell.swift */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		827C37E020E792F70050FA68 /* Input.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Input.storyboard; sourceTree = "<group>"; };
 		827C37E220E793290050FA68 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		829DB82D20E7ACB0005E7ECE /* InputTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTableViewController.swift; sourceTree = "<group>"; };
 		A83331942CEF7DD778DEE687 /* Pods-mashup09.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mashup09.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mashup09/Pods-mashup09.debug.xcconfig"; sourceTree = "<group>"; };
 		BDAF762678E4AD5D82733841 /* Pods_mashup09.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mashup09.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA1C6EB75E1AD1BF06C1F6F5 /* Pods-mashup09.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mashup09.release.xcconfig"; path = "Pods/Target Support Files/Pods-mashup09/Pods-mashup09.release.xcconfig"; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				EF6D1CEF20E787E50098FAD3 /* ViewController.swift */,
 				EF3E94BC20E7952E00ECF5CB /* HomeCollectionTableViewCell.swift */,
 				EF3E94BB20E7952E00ECF5CB /* HomeCollectionViewCell.swift */,
+				829DB82D20E7ACB0005E7ECE /* InputTableViewController.swift */,
 				EF3E94BF20E7968B00ECF5CB /* Home09ItemsTableViewCell.swift */,
 				827C37E220E793290050FA68 /* InputViewController.swift */,
 				EF6D1CF120E787E50098FAD3 /* Main.storyboard */,
@@ -227,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				829DB82E20E7ACB0005E7ECE /* InputTableViewController.swift in Sources */,
 				EF6D1CF620E787E50098FAD3 /* mashup09.xcdatamodeld in Sources */,
 				EF3E94BE20E7952E00ECF5CB /* HomeCollectionTableViewCell.swift in Sources */,
 				EF3E94C020E7968B00ECF5CB /* Home09ItemsTableViewCell.swift in Sources */,

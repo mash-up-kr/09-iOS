@@ -13,6 +13,7 @@ class InputViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    
     @IBAction func tapGestureRecognizer(_ sender: UITapGestureRecognizer) {
         view.endEditing(true)
     }
