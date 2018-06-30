@@ -88,14 +88,14 @@
 				EF3E94BC20E7952E00ECF5CB /* HomeCollectionTableViewCell.swift */,
 				EF3E94BB20E7952E00ECF5CB /* HomeCollectionViewCell.swift */,
 				EF3E94BF20E7968B00ECF5CB /* Home09ItemsTableViewCell.swift */,
+				827C37E220E793290050FA68 /* InputViewController.swift */,
 				EF6D1CF120E787E50098FAD3 /* Main.storyboard */,
+				827C37E020E792F70050FA68 /* Input.storyboard */,
 				EF6D1CF720E787E60098FAD3 /* Assets.xcassets */,
 				EF3E94C120E79B7400ECF5CB /* TestAssets.xcassets */,
 				EF6D1CF920E787E60098FAD3 /* LaunchScreen.storyboard */,
 				EF6D1CFC20E787E60098FAD3 /* Info.plist */,
 				EF6D1CF420E787E50098FAD3 /* mashup09.xcdatamodeld */,
-				827C37E020E792F70050FA68 /* Input.storyboard */,
-				827C37E220E793290050FA68 /* InputViewController.swift */,
 			);
 			path = mashup09;
 			sourceTree = "<group>";

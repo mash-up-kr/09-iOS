@@ -189,6 +189,9 @@
                                 <rect key="frame" x="276" y="7" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="총대매기"/>
+                                <connections>
+                                    <action selector="총대버튼클릭:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rh1-wb-laf"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
@@ -241,6 +244,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="RMs-yc-dHS" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="C2r-FY-qvX">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

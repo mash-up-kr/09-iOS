@@ -25,6 +25,11 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    @IBAction func 총대버튼클릭(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Input", bundle: nil)
+        let inputViewContoller = storyboard.instantiateViewController(withIdentifier: "InputViewController")
+        present(inputViewContoller, animated: true, completion: nil)
+    }
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
