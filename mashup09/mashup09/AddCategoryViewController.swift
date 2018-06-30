@@ -36,15 +36,18 @@ enum ItemCategory: Int {
 
 class AddCategoryViewController: UIViewController {
 
+    @IBOutlet weak var nextButtonDummyView: UIView!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
+    var index: Int = -1
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     @IBAction func actionClose(_ sender: UIBarButtonItem) {
-        dismiss(animated: true)
+        navigationController?.dismiss(animated: true)
     }
     
     @IBAction func actionNext(_ sender: UIButton) {
@@ -79,7 +82,15 @@ extension AddCategoryViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if index != -1 {
+            let dummyIndexPath = IndexPath(row: index, section: 0)
+            tableView.cellForRow(at: dummyIndexPath)?.accessoryType = UITableViewCellAccessoryType.none
+        }
+        tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCellAccessoryType.checkmark
         nextButton.isEnabled = true
+        nextButton.backgroundColor = UIColor(red: 252/255, green: 178/255, blue: 57/255, alpha: 1.0)
+        nextButtonDummyView.backgroundColor = UIColor(red: 252/255, green: 178/255, blue: 57/255, alpha: 1.0)
+        index = indexPath.row
     }
 }
 

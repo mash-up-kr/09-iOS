@@ -10,7 +10,7 @@ import UIKit
 
 class AddContentViewController: UIViewController {
 
-    @IBOutlet weak var prevButton: UIButton!
+    @IBOutlet weak var nextButtonDummyView: UIView!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var textView: UITextView!
@@ -25,22 +25,27 @@ class AddContentViewController: UIViewController {
         view.endEditing(true)
     }
     
-    @IBAction func actionClose(_ sender: UIButton) {
+    @IBAction func actionClose(_ sender: UIBarButtonItem) {
         navigationController?.dismiss(animated: true)
     }
     
-    @IBAction func actionPrev(_ sender: UIButton) {
-        navigationController?.popViewController(animated: true)
-    }
-    
     @IBAction func actionNext(_ sender: UIButton) {
-        performSegue(withIdentifier: "AddDetailSegue", sender: nil)
+        performSegue(withIdentifier: "AddImageSegue", sender: nil)
     }
 }
 
 // MARK: - UITextFieldDelegate
 extension AddContentViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if let text = textField.text,
+            !text.isEmpty,
+            !textView.text.isEmpty {
+                nextButton.backgroundColor = UIColor(red: 252/255, green: 178/255, blue: 57/255, alpha: 1.0)
+            nextButtonDummyView.backgroundColor = UIColor(red: 252/255, green: 178/255, blue: 57/255, alpha: 1.0)
+        } else {
+            nextButton.backgroundColor = UIColor(red: 196/255, green: 196/255, blue: 196/255, alpha: 1.0)
+            nextButtonDummyView.backgroundColor = UIColor(red: 196/255, green: 196/255, blue: 196/255, alpha: 1.0)
+        }
         textField.resignFirstResponder()
         return true
     }
@@ -48,8 +53,16 @@ extension AddContentViewController: UITextFieldDelegate {
 
 // MARK: - UITextViewDelegate
 extension AddContentViewController: UITextViewDelegate {
-    
     func textViewShouldEndEditing(_ textView: UITextView) -> Bool {
+        if let text = textField.text,
+            !text.isEmpty,
+            !textView.text.isEmpty {
+            nextButton.backgroundColor = UIColor(red: 252/255, green: 178/255, blue: 57/255, alpha: 1.0)
+            nextButtonDummyView.backgroundColor = UIColor(red: 252/255, green: 178/255, blue: 57/255, alpha: 1.0)
+        } else {
+            nextButton.backgroundColor = UIColor(red: 196/255, green: 196/255, blue: 196/255, alpha: 1.0)
+            nextButtonDummyView.backgroundColor = UIColor(red: 196/255, green: 196/255, blue: 196/255, alpha: 1.0)
+        }
         textView.resignFirstResponder()
         return true
     }
