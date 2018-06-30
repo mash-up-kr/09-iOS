@@ -155,8 +155,8 @@
                                 <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sQo-L1-5MD">
-                                <rect key="frame" x="20" y="210.33333333333334" width="335" height="492.66666666666663"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sQo-L1-5MD" customClass="JSGrowingTextView" customModule="mashup09" customModuleProvider="target">
+                                <rect key="frame" x="16" y="195.33333333333334" width="339" height="507.66666666666663"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
@@ -190,7 +190,7 @@
                         <constraints>
                             <constraint firstItem="PTQ-cD-6qb" firstAttribute="leading" secondItem="yE5-rt-Bwg" secondAttribute="leading" id="6GU-Tv-XY7"/>
                             <constraint firstItem="hiL-5N-IY1" firstAttribute="top" secondItem="6bO-tE-HuB" secondAttribute="bottom" constant="20" id="Apz-NA-iwR"/>
-                            <constraint firstItem="sQo-L1-5MD" firstAttribute="top" secondItem="hiL-5N-IY1" secondAttribute="bottom" constant="15" id="BkE-h2-PJQ"/>
+                            <constraint firstItem="sQo-L1-5MD" firstAttribute="top" secondItem="hiL-5N-IY1" secondAttribute="bottom" id="BkE-h2-PJQ"/>
                             <constraint firstItem="U4r-LH-SZz" firstAttribute="trailing" secondItem="627-EN-ecT" secondAttribute="trailing" id="FEo-aq-gro"/>
                             <constraint firstItem="YrO-zu-4kd" firstAttribute="leading" secondItem="627-EN-ecT" secondAttribute="leading" constant="20" id="JNP-xx-PSq"/>
                             <constraint firstItem="YrO-zu-4kd" firstAttribute="top" secondItem="627-EN-ecT" secondAttribute="top" constant="20" id="Mj1-Dn-eGK"/>
@@ -201,7 +201,7 @@
                             <constraint firstItem="PTQ-cD-6qb" firstAttribute="top" secondItem="U4r-LH-SZz" secondAttribute="bottom" id="biU-bB-o8V"/>
                             <constraint firstItem="PTQ-cD-6qb" firstAttribute="top" secondItem="627-EN-ecT" secondAttribute="bottom" id="fq2-yH-RwG"/>
                             <constraint firstAttribute="bottom" secondItem="PTQ-cD-6qb" secondAttribute="bottom" id="gYu-Fe-rYK"/>
-                            <constraint firstItem="sQo-L1-5MD" firstAttribute="leading" secondItem="627-EN-ecT" secondAttribute="leading" constant="20" id="gje-wE-mDu"/>
+                            <constraint firstItem="sQo-L1-5MD" firstAttribute="leading" secondItem="627-EN-ecT" secondAttribute="leading" constant="16" id="gje-wE-mDu"/>
                             <constraint firstItem="hiL-5N-IY1" firstAttribute="leading" secondItem="YrO-zu-4kd" secondAttribute="leading" id="iPN-gR-a5J"/>
                             <constraint firstAttribute="trailing" secondItem="PTQ-cD-6qb" secondAttribute="trailing" id="uFi-vc-Ajv"/>
                             <constraint firstItem="6bO-tE-HuB" firstAttribute="leading" secondItem="YrO-zu-4kd" secondAttribute="leading" id="v4c-lN-3Sz"/>

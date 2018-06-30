@@ -26,6 +26,7 @@
 		EF6D1CF620E787E50098FAD3 /* mashup09.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF6D1CF420E787E50098FAD3 /* mashup09.xcdatamodeld */; };
 		EF6D1CF820E787E60098FAD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF6D1CF720E787E60098FAD3 /* Assets.xcassets */; };
 		EF6D1CFB20E787E60098FAD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF6D1CF920E787E60098FAD3 /* LaunchScreen.storyboard */; };
+		EF827F1D20E7E56700BAC0AF /* JSGrowingTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF827F1C20E7E56700BAC0AF /* JSGrowingTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		EF6D1CF720E787E60098FAD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF6D1CFA20E787E60098FAD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF6D1CFC20E787E60098FAD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF827F1C20E7E56700BAC0AF /* JSGrowingTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSGrowingTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				AAC2FEED20E792AC00686BC9 /* AddContentViewController.swift */,
 				AAC2FEEF20E792D600686BC9 /* AddDetailViewController.swift */,
 				AAC2FEF120E7AFD700686BC9 /* AddImageViewController.swift */,
+				EF827F1C20E7E56700BAC0AF /* JSGrowingTextView.swift */,
 			);
 			path = mashup09;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 				EF6D1CF020E787E50098FAD3 /* ViewController.swift in Sources */,
 				AAC2FEF220E7AFD700686BC9 /* AddImageViewController.swift in Sources */,
 				EF6D1CEE20E787E50098FAD3 /* AppDelegate.swift in Sources */,
+				EF827F1D20E7E56700BAC0AF /* JSGrowingTextView.swift in Sources */,
 				827C37E320E793290050FA68 /* InputViewController.swift in Sources */,
 				EF3E94BD20E7952E00ECF5CB /* HomeCollectionViewCell.swift in Sources */,
 			);
@@ -408,7 +412,10 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = mashup09/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = kr.co.mashup.mashup09;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -425,7 +432,10 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = mashup09/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = kr.co.mashup.mashup09;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
