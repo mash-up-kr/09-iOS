@@ -122,6 +122,7 @@
                                                             <size key="customSize" width="280" height="120"/>
                                                             <connections>
                                                                 <outlet property="imageView" destination="Otb-NY-83p" id="p7e-3z-Lsd"/>
+                                                                <segue destination="SGr-ry-NqT" kind="presentation" id="5qO-Ku-OHH"/>
                                                             </connections>
                                                         </collectionViewCell>
                                                     </cells>
@@ -196,8 +197,8 @@
                                                 <constraint firstItem="gCd-JZ-tFx" firstAttribute="leading" secondItem="kUw-sw-4R7" secondAttribute="trailing" constant="15" id="K5l-G6-CsM"/>
                                                 <constraint firstAttribute="trailing" secondItem="Mt2-tj-GV3" secondAttribute="trailing" constant="20" id="OdM-aW-FdW"/>
                                                 <constraint firstItem="Mt2-tj-GV3" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="kUw-sw-4R7" secondAttribute="bottom" id="f8I-hT-uua"/>
-                                                <constraint firstAttribute="bottom" secondItem="kUw-sw-4R7" secondAttribute="bottom" constant="20" id="jKj-l9-G13"/>
-                                                <constraint firstItem="kUw-sw-4R7" firstAttribute="top" secondItem="CpZ-ti-0ed" secondAttribute="top" constant="20" id="tIO-7O-fua"/>
+                                                <constraint firstAttribute="bottom" secondItem="kUw-sw-4R7" secondAttribute="bottom" constant="10" id="jKj-l9-G13"/>
+                                                <constraint firstItem="kUw-sw-4R7" firstAttribute="top" secondItem="CpZ-ti-0ed" secondAttribute="top" constant="10" id="tIO-7O-fua"/>
                                                 <constraint firstItem="Mt2-tj-GV3" firstAttribute="top" secondItem="gCd-JZ-tFx" secondAttribute="bottom" constant="4" id="tsf-I1-hVs"/>
                                                 <constraint firstItem="gCd-JZ-tFx" firstAttribute="top" secondItem="kUw-sw-4R7" secondAttribute="top" constant="1" id="z5s-Kr-N4u"/>
                                             </constraints>
@@ -251,6 +252,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bDo-DX-DU7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2564" y="132"/>
+        </scene>
+        <!--Viewer-->
+        <scene sceneID="bfD-Ap-Egg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Viewer" id="SGr-ry-NqT" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m1o-Kp-F08" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2563" y="-10"/>
         </scene>
         <!--search-->
         <scene sceneID="uch-Ej-Rmb">
@@ -324,9 +333,6 @@
         <image name="make" width="45" height="45"/>
         <image name="netflix-new-logo" width="900" height="506"/>
         <image name="search" width="25" height="25"/>
-        <namedColor name="Color-1">
-            <color red="0.066666666666666666" green="0.50196078431372548" blue="0.68235294117647061" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="Color-1">
             <color red="0.066666666666666666" green="0.50196078431372548" blue="0.68235294117647061" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

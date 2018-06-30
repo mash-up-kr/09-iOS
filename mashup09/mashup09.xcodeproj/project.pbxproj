@@ -29,6 +29,8 @@
 		EF6D1CF820E787E60098FAD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF6D1CF720E787E60098FAD3 /* Assets.xcassets */; };
 		EF6D1CFB20E787E60098FAD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF6D1CF920E787E60098FAD3 /* LaunchScreen.storyboard */; };
 		EF827F1D20E7E56700BAC0AF /* JSGrowingTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF827F1C20E7E56700BAC0AF /* JSGrowingTextView.swift */; };
+		EF827F1F20E816D800BAC0AF /* Viewer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF827F1E20E816D800BAC0AF /* Viewer.storyboard */; };
+		EF827F2120E8207400BAC0AF /* Tab1TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF827F2020E8207400BAC0AF /* Tab1TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		EF6D1CFA20E787E60098FAD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF6D1CFC20E787E60098FAD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF827F1C20E7E56700BAC0AF /* JSGrowingTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSGrowingTextView.swift; sourceTree = "<group>"; };
+		EF827F1E20E816D800BAC0AF /* Viewer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Viewer.storyboard; sourceTree = "<group>"; };
+		EF827F2020E8207400BAC0AF /* Tab1TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,8 @@
 				AAC2FEF120E7AFD700686BC9 /* AddImageViewController.swift */,
 				EF827F1C20E7E56700BAC0AF /* JSGrowingTextView.swift */,
 				829DB83120E81053005E7ECE /* RoundButton.swift */,
+				EF827F1E20E816D800BAC0AF /* Viewer.storyboard */,
+				EF827F2020E8207400BAC0AF /* Tab1TableViewController.swift */,
 			);
 			path = mashup09;
 			sourceTree = "<group>";
@@ -197,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF6D1CFB20E787E60098FAD3 /* LaunchScreen.storyboard in Resources */,
+				EF827F1F20E816D800BAC0AF /* Viewer.storyboard in Resources */,
 				AAC2FEEA20E7907500686BC9 /* Add.storyboard in Resources */,
 				EF6D1CF820E787E60098FAD3 /* Assets.xcassets in Resources */,
 				EF3E94C220E79B7400ECF5CB /* TestAssets.xcassets in Resources */,
@@ -264,6 +271,7 @@
 				EF3E94C020E7968B00ECF5CB /* Home09ItemsTableViewCell.swift in Sources */,
 				AAC2FEEC20E7908E00686BC9 /* AddCategoryViewController.swift in Sources */,
 				829DB83220E81053005E7ECE /* RoundButton.swift in Sources */,
+				EF827F2120E8207400BAC0AF /* Tab1TableViewController.swift in Sources */,
 				AAC2FEEE20E792AC00686BC9 /* AddContentViewController.swift in Sources */,
 				AAC2FEF020E792D600686BC9 /* AddDetailViewController.swift in Sources */,
 				EF6D1CF020E787E50098FAD3 /* ViewController.swift in Sources */,
