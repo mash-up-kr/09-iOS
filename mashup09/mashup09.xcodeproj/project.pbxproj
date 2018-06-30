@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		43113B434EF0537D13D5D878 /* Pods_mashup09.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDAF762678E4AD5D82733841 /* Pods_mashup09.framework */; };
+		AAC2FEEA20E7907500686BC9 /* Add.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAC2FEE920E7907500686BC9 /* Add.storyboard */; };
+		AAC2FEEC20E7908E00686BC9 /* AddCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC2FEEB20E7908E00686BC9 /* AddCategoryViewController.swift */; };
+		AAC2FEEE20E792AC00686BC9 /* AddContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC2FEED20E792AC00686BC9 /* AddContentViewController.swift */; };
+		AAC2FEF020E792D600686BC9 /* AddDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC2FEEF20E792D600686BC9 /* AddDetailViewController.swift */; };
 		EF6D1CEE20E787E50098FAD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6D1CED20E787E50098FAD3 /* AppDelegate.swift */; };
 		EF6D1CF020E787E50098FAD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6D1CEF20E787E50098FAD3 /* ViewController.swift */; };
 		EF6D1CF320E787E50098FAD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF6D1CF120E787E50098FAD3 /* Main.storyboard */; };
@@ -18,6 +22,10 @@
 
 /* Begin PBXFileReference section */
 		A83331942CEF7DD778DEE687 /* Pods-mashup09.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mashup09.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mashup09/Pods-mashup09.debug.xcconfig"; sourceTree = "<group>"; };
+		AAC2FEE920E7907500686BC9 /* Add.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Add.storyboard; sourceTree = "<group>"; };
+		AAC2FEEB20E7908E00686BC9 /* AddCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCategoryViewController.swift; sourceTree = "<group>"; };
+		AAC2FEED20E792AC00686BC9 /* AddContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContentViewController.swift; sourceTree = "<group>"; };
+		AAC2FEEF20E792D600686BC9 /* AddDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDetailViewController.swift; sourceTree = "<group>"; };
 		BDAF762678E4AD5D82733841 /* Pods_mashup09.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mashup09.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA1C6EB75E1AD1BF06C1F6F5 /* Pods-mashup09.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mashup09.release.xcconfig"; path = "Pods/Target Support Files/Pods-mashup09/Pods-mashup09.release.xcconfig"; sourceTree = "<group>"; };
 		EF6D1CEA20E787E50098FAD3 /* mashup09.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mashup09.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +86,10 @@
 				EF6D1CF920E787E60098FAD3 /* LaunchScreen.storyboard */,
 				EF6D1CFC20E787E60098FAD3 /* Info.plist */,
 				EF6D1CF420E787E50098FAD3 /* mashup09.xcdatamodeld */,
+				AAC2FEE920E7907500686BC9 /* Add.storyboard */,
+				AAC2FEEB20E7908E00686BC9 /* AddCategoryViewController.swift */,
+				AAC2FEED20E792AC00686BC9 /* AddContentViewController.swift */,
+				AAC2FEEF20E792D600686BC9 /* AddDetailViewController.swift */,
 			);
 			path = mashup09;
 			sourceTree = "<group>";
@@ -103,6 +115,7 @@
 				EF6D1CE720E787E50098FAD3 /* Frameworks */,
 				EF6D1CE820E787E50098FAD3 /* Resources */,
 				A05D851A8755DBDB0FEF6166 /* [CP] Embed Pods Frameworks */,
+				93A10565B631B9822045BAFA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF6D1CFB20E787E60098FAD3 /* LaunchScreen.storyboard in Resources */,
+				AAC2FEEA20E7907500686BC9 /* Add.storyboard in Resources */,
 				EF6D1CF820E787E60098FAD3 /* Assets.xcassets in Resources */,
 				EF6D1CF320E787E50098FAD3 /* Main.storyboard in Resources */,
 			);
@@ -176,6 +190,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93A10565B631B9822045BAFA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mashup09/Pods-mashup09-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A05D851A8755DBDB0FEF6166 /* [CP] Embed Pods Frameworks */ = {
@@ -208,6 +237,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF6D1CF620E787E50098FAD3 /* mashup09.xcdatamodeld in Sources */,
+				AAC2FEEC20E7908E00686BC9 /* AddCategoryViewController.swift in Sources */,
+				AAC2FEEE20E792AC00686BC9 /* AddContentViewController.swift in Sources */,
+				AAC2FEF020E792D600686BC9 /* AddDetailViewController.swift in Sources */,
 				EF6D1CF020E787E50098FAD3 /* ViewController.swift in Sources */,
 				EF6D1CEE20E787E50098FAD3 /* AppDelegate.swift in Sources */,
 			);
@@ -357,7 +389,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = mashup09/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = kr.co.mashup.mashup09;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -373,7 +408,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = mashup09/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = kr.co.mashup.mashup09;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
