@@ -51,6 +51,9 @@ class AddCategoryViewController: UIViewController {
     }
     
     @IBAction func actionNext(_ sender: UIButton) {
+        if let category =  ItemCategory(rawValue: index)?.toString() {
+            DataManager.share.dummyData.category = category
+        }
         performSegue(withIdentifier: "AddContentSegue", sender: nil)
     }
 }

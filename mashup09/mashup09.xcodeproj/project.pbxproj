@@ -13,6 +13,9 @@
 		829DB82E20E7ACB0005E7ECE /* InputTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829DB82D20E7ACB0005E7ECE /* InputTableViewController.swift */; };
 		829DB83020E80919005E7ECE /* AddDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829DB82F20E80919005E7ECE /* AddDetailTableViewController.swift */; };
 		829DB83220E81053005E7ECE /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829DB83120E81053005E7ECE /* RoundButton.swift */; };
+		AA34D8A220E81F97007ABC2C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA34D8A120E81F97007ABC2C /* DataManager.swift */; };
+		AA34D8A420E82420007ABC2C /* AddCheckDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA34D8A320E82420007ABC2C /* AddCheckDataViewController.swift */; };
+		AA34D8A620E82432007ABC2C /* AddCheckDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA34D8A520E82432007ABC2C /* AddCheckDataTableViewController.swift */; };
 		AAC2FEEA20E7907500686BC9 /* Add.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAC2FEE920E7907500686BC9 /* Add.storyboard */; };
 		AAC2FEEC20E7908E00686BC9 /* AddCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC2FEEB20E7908E00686BC9 /* AddCategoryViewController.swift */; };
 		AAC2FEEE20E792AC00686BC9 /* AddContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC2FEED20E792AC00686BC9 /* AddContentViewController.swift */; };
@@ -40,6 +43,9 @@
 		829DB82F20E80919005E7ECE /* AddDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDetailTableViewController.swift; sourceTree = "<group>"; };
 		829DB83120E81053005E7ECE /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		A83331942CEF7DD778DEE687 /* Pods-mashup09.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mashup09.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mashup09/Pods-mashup09.debug.xcconfig"; sourceTree = "<group>"; };
+		AA34D8A120E81F97007ABC2C /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		AA34D8A320E82420007ABC2C /* AddCheckDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCheckDataViewController.swift; sourceTree = "<group>"; };
+		AA34D8A520E82432007ABC2C /* AddCheckDataTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCheckDataTableViewController.swift; sourceTree = "<group>"; };
 		AAC2FEE920E7907500686BC9 /* Add.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Add.storyboard; sourceTree = "<group>"; };
 		AAC2FEEB20E7908E00686BC9 /* AddCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCategoryViewController.swift; sourceTree = "<group>"; };
 		AAC2FEED20E792AC00686BC9 /* AddContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContentViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +135,9 @@
 				829DB83120E81053005E7ECE /* RoundButton.swift */,
 				EF827F1E20E816D800BAC0AF /* Viewer.storyboard */,
 				EF827F2020E8207400BAC0AF /* Tab1TableViewController.swift */,
+				AA34D8A120E81F97007ABC2C /* DataManager.swift */,
+				AA34D8A320E82420007ABC2C /* AddCheckDataViewController.swift */,
+				AA34D8A520E82432007ABC2C /* AddCheckDataTableViewController.swift */,
 			);
 			path = mashup09;
 			sourceTree = "<group>";
@@ -265,7 +274,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				829DB82E20E7ACB0005E7ECE /* InputTableViewController.swift in Sources */,
+				AA34D8A220E81F97007ABC2C /* DataManager.swift in Sources */,
+				AA34D8A420E82420007ABC2C /* AddCheckDataViewController.swift in Sources */,
 				EF6D1CF620E787E50098FAD3 /* mashup09.xcdatamodeld in Sources */,
+				AA34D8A620E82432007ABC2C /* AddCheckDataTableViewController.swift in Sources */,
 				829DB83020E80919005E7ECE /* AddDetailTableViewController.swift in Sources */,
 				EF3E94BE20E7952E00ECF5CB /* HomeCollectionTableViewCell.swift in Sources */,
 				EF3E94C020E7968B00ECF5CB /* Home09ItemsTableViewCell.swift in Sources */,
