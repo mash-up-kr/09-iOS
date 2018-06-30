@@ -61,4 +61,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             return home09ItemsTableViewCell
         }
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }
