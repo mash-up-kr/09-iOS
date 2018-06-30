@@ -47,7 +47,7 @@ class AddCategoryViewController: UIViewController {
     }
     
     @IBAction func actionClose(_ sender: UIBarButtonItem) {
-        navigationController?.dismiss(animated: true)
+        dismiss(animated: true)
     }
     
     @IBAction func actionNext(_ sender: UIButton) {

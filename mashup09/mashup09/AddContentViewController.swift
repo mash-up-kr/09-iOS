@@ -7,11 +7,12 @@
 //
 
 import UIKit
+import ImagePicker
 
 class AddContentViewController: UIViewController {
 
-    @IBOutlet weak var nextButtonDummyView: UIView!
-    @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var selectButtonDummyView: UIView!
+    @IBOutlet weak var selectButton: UIButton!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var textView: UITextView!
     
@@ -26,11 +27,13 @@ class AddContentViewController: UIViewController {
     }
     
     @IBAction func actionClose(_ sender: UIBarButtonItem) {
-        navigationController?.dismiss(animated: true)
+        dismiss(animated: true)
     }
     
-    @IBAction func actionNext(_ sender: UIButton) {
-        performSegue(withIdentifier: "AddImageSegue", sender: nil)
+    @IBAction func actionSelectImage(_ sender: UIButton) {
+        let imagePickerController = ImagePickerController()
+        imagePickerController.delegate = self
+        present(imagePickerController, animated: true)
     }
 }
 
@@ -40,11 +43,11 @@ extension AddContentViewController: UITextFieldDelegate {
         if let text = textField.text,
             !text.isEmpty,
             !textView.text.isEmpty {
-                nextButton.backgroundColor = UIColor(red: 252/255, green: 178/255, blue: 57/255, alpha: 1.0)
-            nextButtonDummyView.backgroundColor = UIColor(red: 252/255, green: 178/255, blue: 57/255, alpha: 1.0)
+                selectButton.backgroundColor = UIColor(red: 252/255, green: 178/255, blue: 57/255, alpha: 1.0)
+            selectButtonDummyView.backgroundColor = UIColor(red: 252/255, green: 178/255, blue: 57/255, alpha: 1.0)
         } else {
-            nextButton.backgroundColor = UIColor(red: 196/255, green: 196/255, blue: 196/255, alpha: 1.0)
-            nextButtonDummyView.backgroundColor = UIColor(red: 196/255, green: 196/255, blue: 196/255, alpha: 1.0)
+            selectButton.backgroundColor = UIColor(red: 196/255, green: 196/255, blue: 196/255, alpha: 1.0)
+            selectButtonDummyView.backgroundColor = UIColor(red: 196/255, green: 196/255, blue: 196/255, alpha: 1.0)
         }
         textField.resignFirstResponder()
         return true
@@ -57,14 +60,33 @@ extension AddContentViewController: UITextViewDelegate {
         if let text = textField.text,
             !text.isEmpty,
             !textView.text.isEmpty {
-            nextButton.backgroundColor = UIColor(red: 252/255, green: 178/255, blue: 57/255, alpha: 1.0)
-            nextButtonDummyView.backgroundColor = UIColor(red: 252/255, green: 178/255, blue: 57/255, alpha: 1.0)
+            selectButton.backgroundColor = UIColor(red: 252/255, green: 178/255, blue: 57/255, alpha: 1.0)
+            selectButtonDummyView.backgroundColor = UIColor(red: 252/255, green: 178/255, blue: 57/255, alpha: 1.0)
         } else {
-            nextButton.backgroundColor = UIColor(red: 196/255, green: 196/255, blue: 196/255, alpha: 1.0)
-            nextButtonDummyView.backgroundColor = UIColor(red: 196/255, green: 196/255, blue: 196/255, alpha: 1.0)
+            selectButton.backgroundColor = UIColor(red: 196/255, green: 196/255, blue: 196/255, alpha: 1.0)
+            selectButtonDummyView.backgroundColor = UIColor(red: 196/255, green: 196/255, blue: 196/255, alpha: 1.0)
         }
         textView.resignFirstResponder()
         return true
+    }
+}
+
+// MARK: - ImagePickerDelegate
+extension AddContentViewController: ImagePickerDelegate {
+    func wrapperDidPress(_ imagePicker: ImagePickerController, images: [UIImage]) {
+        print("wrapperDidPress")
+    }
+    
+    func doneButtonDidPress(_ imagePicker: ImagePickerController, images: [UIImage]) {
+        print("doneButtonDidPress")
+        dismiss(animated: true) { [weak self] in
+            self?.performSegue(withIdentifier: "AddDetailSegue", sender: nil)
+        }
+    }
+    
+    func cancelButtonDidPress(_ imagePicker: ImagePickerController) {
+        print("cancelButtonDidPress")
+        dismiss(animated: true)
     }
 }
 
