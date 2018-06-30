@@ -12,6 +12,7 @@
 		827C37E320E793290050FA68 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827C37E220E793290050FA68 /* InputViewController.swift */; };
 		829DB82E20E7ACB0005E7ECE /* InputTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829DB82D20E7ACB0005E7ECE /* InputTableViewController.swift */; };
 		829DB83020E80919005E7ECE /* AddDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829DB82F20E80919005E7ECE /* AddDetailTableViewController.swift */; };
+		829DB83220E81053005E7ECE /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829DB83120E81053005E7ECE /* RoundButton.swift */; };
 		AAC2FEEA20E7907500686BC9 /* Add.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAC2FEE920E7907500686BC9 /* Add.storyboard */; };
 		AAC2FEEC20E7908E00686BC9 /* AddCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC2FEEB20E7908E00686BC9 /* AddCategoryViewController.swift */; };
 		AAC2FEEE20E792AC00686BC9 /* AddContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC2FEED20E792AC00686BC9 /* AddContentViewController.swift */; };
@@ -35,6 +36,7 @@
 		827C37E220E793290050FA68 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 		829DB82D20E7ACB0005E7ECE /* InputTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTableViewController.swift; sourceTree = "<group>"; };
 		829DB82F20E80919005E7ECE /* AddDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDetailTableViewController.swift; sourceTree = "<group>"; };
+		829DB83120E81053005E7ECE /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		A83331942CEF7DD778DEE687 /* Pods-mashup09.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mashup09.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mashup09/Pods-mashup09.debug.xcconfig"; sourceTree = "<group>"; };
 		AAC2FEE920E7907500686BC9 /* Add.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Add.storyboard; sourceTree = "<group>"; };
 		AAC2FEEB20E7908E00686BC9 /* AddCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCategoryViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				AAC2FEEF20E792D600686BC9 /* AddDetailViewController.swift */,
 				AAC2FEF120E7AFD700686BC9 /* AddImageViewController.swift */,
 				EF827F1C20E7E56700BAC0AF /* JSGrowingTextView.swift */,
+				829DB83120E81053005E7ECE /* RoundButton.swift */,
 			);
 			path = mashup09;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				EF3E94BE20E7952E00ECF5CB /* HomeCollectionTableViewCell.swift in Sources */,
 				EF3E94C020E7968B00ECF5CB /* Home09ItemsTableViewCell.swift in Sources */,
 				AAC2FEEC20E7908E00686BC9 /* AddCategoryViewController.swift in Sources */,
+				829DB83220E81053005E7ECE /* RoundButton.swift in Sources */,
 				AAC2FEEE20E792AC00686BC9 /* AddContentViewController.swift in Sources */,
 				AAC2FEF020E792D600686BC9 /* AddDetailViewController.swift in Sources */,
 				EF6D1CF020E787E50098FAD3 /* ViewController.swift in Sources */,

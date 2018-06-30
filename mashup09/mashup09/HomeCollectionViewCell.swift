@@ -11,6 +11,12 @@ import UIKit
 class HomeCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        layer.cornerRadius = 20
+        clipsToBounds = true
+    }
+    
     func setImage(image: UIImage) {
         imageView.image = image
     }
