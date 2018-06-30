@@ -68,11 +68,40 @@
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_2242" translatesAutoresizingMaskIntoConstraints="NO" id="Otb-NY-83p">
                                                                         <rect key="frame" x="0.0" y="0.0" width="280" height="120"/>
                                                                     </imageView>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pdg-EE-9z9">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="280" height="120"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="인기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4Y-X4-ZvP">
+                                                                                <rect key="frame" x="246" y="8" width="26" height="18"/>
+                                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.25" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstItem="b4Y-X4-ZvP" firstAttribute="top" secondItem="Pdg-EE-9z9" secondAttribute="top" constant="8" id="BjS-27-E5p"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="b4Y-X4-ZvP" secondAttribute="trailing" constant="8" id="owW-O5-Gfu"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="제니제니제니" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgl-4i-SQi">
+                                                                        <rect key="frame" x="20" y="91" width="240" height="21"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
                                                                 </subviews>
                                                             </view>
                                                             <constraints>
+                                                                <constraint firstItem="Pdg-EE-9z9" firstAttribute="leading" secondItem="D6z-DH-M5N" secondAttribute="leading" id="28G-l7-cwb"/>
+                                                                <constraint firstAttribute="bottom" secondItem="Pdg-EE-9z9" secondAttribute="bottom" id="2Xo-1F-jQ5"/>
+                                                                <constraint firstAttribute="trailing" secondItem="Pdg-EE-9z9" secondAttribute="trailing" id="3K3-fl-vey"/>
                                                                 <constraint firstAttribute="trailing" secondItem="Otb-NY-83p" secondAttribute="trailing" id="Exg-ky-K0Z"/>
                                                                 <constraint firstItem="Otb-NY-83p" firstAttribute="leading" secondItem="D6z-DH-M5N" secondAttribute="leading" id="HcM-ll-ck1"/>
+                                                                <constraint firstItem="Pdg-EE-9z9" firstAttribute="top" secondItem="D6z-DH-M5N" secondAttribute="top" id="VUB-Fn-HYu"/>
+                                                                <constraint firstItem="vgl-4i-SQi" firstAttribute="leading" secondItem="D6z-DH-M5N" secondAttribute="leading" constant="20" id="YOe-Mt-7cV"/>
+                                                                <constraint firstAttribute="bottom" secondItem="vgl-4i-SQi" secondAttribute="bottom" constant="8" id="ZFw-PP-7JG"/>
+                                                                <constraint firstAttribute="trailing" secondItem="vgl-4i-SQi" secondAttribute="trailing" constant="20" id="bQQ-Aa-5YU"/>
                                                                 <constraint firstItem="Otb-NY-83p" firstAttribute="top" secondItem="D6z-DH-M5N" secondAttribute="top" id="cBQ-SR-iO1"/>
                                                                 <constraint firstAttribute="bottom" secondItem="Otb-NY-83p" secondAttribute="bottom" id="i46-0i-f0b"/>
                                                             </constraints>
@@ -91,6 +120,7 @@
                                                 <constraint firstItem="T0q-wF-Gfc" firstAttribute="leading" secondItem="KU4-PM-LGI" secondAttribute="leading" id="lgl-mo-wUf"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <connections>
                                             <outlet property="collectionView" destination="T0q-wF-Gfc" id="Zbq-hX-5R5"/>
                                         </connections>
@@ -135,6 +165,7 @@
                                                 <constraint firstItem="gCd-JZ-tFx" firstAttribute="top" secondItem="kUw-sw-4R7" secondAttribute="top" constant="1" id="z5s-Kr-N4u"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
