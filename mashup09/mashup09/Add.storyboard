@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--카테고리-->
+        <!--카테고리 선택-->
         <scene sceneID="Krp-cU-UF3">
             <objects>
                 <viewController id="4d8-9W-QxE" customClass="AddCategoryViewController" customModule="mashup09" customModuleProvider="target" sceneMemberID="viewController">
@@ -94,7 +94,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Dxw-Jd-CQb"/>
                     </view>
-                    <navigationItem key="navigationItem" title="카테고리" id="YSY-Ry-t4s">
+                    <navigationItem key="navigationItem" title="카테고리 선택" id="YSY-Ry-t4s">
+                        <barButtonItem key="backBarButtonItem" title=" " id="v4D-bb-vkF"/>
                         <barButtonItem key="rightBarButtonItem" image="close" id="fN8-Ch-Bsr">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -136,7 +137,7 @@
             </objects>
             <point key="canvasLocation" x="189.59999999999999" y="151.57421289355324"/>
         </scene>
-        <!--Add Content View Controller-->
+        <!--내용 작성-->
         <scene sceneID="hBv-ug-0af">
             <objects>
                 <viewController id="Qqg-Oj-Os7" customClass="AddContentViewController" customModule="mashup09" customModuleProvider="target" sceneMemberID="viewController">
@@ -210,7 +211,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="627-EN-ecT"/>
                     </view>
-                    <navigationItem key="navigationItem" id="tsD-lu-20N">
+                    <navigationItem key="navigationItem" title="내용 작성" id="tsD-lu-20N">
+                        <barButtonItem key="backBarButtonItem" title=" " id="CYP-AE-Ayl"/>
                         <barButtonItem key="rightBarButtonItem" image="close" id="hV7-NQ-Pe5">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -230,7 +232,7 @@
             </objects>
             <point key="canvasLocation" x="1706" y="152"/>
         </scene>
-        <!--Add Detail View Controller-->
+        <!--내용 작성-->
         <scene sceneID="4dc-Uk-usz">
             <objects>
                 <viewController id="wlV-1M-pk4" customClass="AddDetailViewController" customModule="mashup09" customModuleProvider="target" sceneMemberID="viewController">
@@ -269,7 +271,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2Ym-zF-dy4"/>
                     </view>
-                    <navigationItem key="navigationItem" id="I5R-j2-UAC">
+                    <navigationItem key="navigationItem" title="내용 작성" id="I5R-j2-UAC">
                         <barButtonItem key="rightBarButtonItem" image="close" id="wAf-qU-dh2">
                             <connections>
                                 <action selector="actionClose:" destination="wlV-1M-pk4" id="Wua-ph-5CI"/>
