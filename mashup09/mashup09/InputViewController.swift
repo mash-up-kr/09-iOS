@@ -9,6 +9,9 @@
 import UIKit
 
 class InputViewController: UIViewController {
+    
+    @IBOutlet weak var nextButtonDummyView: UIView!
+    @IBOutlet weak var nextButton: UIButton!
     @IBAction func 닫기버튼액션(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
@@ -25,4 +28,5 @@ class InputViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
 }
