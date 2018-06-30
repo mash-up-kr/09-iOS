@@ -18,10 +18,10 @@ class AddDetailViewController: UIViewController {
     }
     
     @IBAction func actionClose(_ sender: UIBarButtonItem) {
-        navigationController?.dismiss(animated: true)
+        dismiss(animated: true)
     }
     
     @IBAction func actionConfirm(_ sender: UIButton) {
-        navigationController?.dismiss(animated: true)
+        dismiss(animated: true)
     }
 }
