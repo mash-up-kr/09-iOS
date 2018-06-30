@@ -26,7 +26,7 @@ public class JSGrowingTextView: UITextView {
     
     private func commonInit() {
         contentMode = .redraw
-        NotificationCenter.default.addObserver(self, selector: #selector(textDidChange), name: .UITextViewTextDidChange, object: self)wafwa
+        NotificationCenter.default.addObserver(self, selector: #selector(textDidChange), name: .UITextViewTextDidChange, object: self)
     }
     
     deinit {
