@@ -21,10 +21,16 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(reloadTableView), name: .dataAdded, object: nil)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: .dataAdded, object: nil)
+    }
+    
+    @objc func reloadTableView(notification: NSNotification) {
+        tableView.reloadData()
     }
 }
 
@@ -42,7 +48,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         case .itemsHeader:
             return 1
         case .items:
-            return 10
+            return DataManager.share.groupPurchaseData.count
         }
     }
     
@@ -58,6 +64,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             return recentTableViewCell
         case .items:
             guard let home09ItemsTableViewCell = tableView.dequeueReusableCell(withIdentifier: "Home09ItemsTableViewCell", for: indexPath) as? Home09ItemsTableViewCell else { return UITableViewCell() }
+            home09ItemsTableViewCell.configureCell(indexPath.row)
             return home09ItemsTableViewCell
         }
     }

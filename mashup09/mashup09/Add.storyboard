@@ -435,20 +435,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0D5-Jw-2W8">
-                                <rect key="frame" x="0.0" y="630" width="375" height="60"/>
-                                <color key="backgroundColor" red="0.98823529409999999" green="0.69803921570000005" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="dVg-qd-hdu"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                <state key="normal" title="완료">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="actionConfirm:" destination="FkV-cV-YCk" eventType="touchUpInside" id="mJ4-MN-mG0"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Uf-kO-65n">
                                 <rect key="frame" x="0.0" y="690" width="375" height="34"/>
                                 <color key="backgroundColor" red="0.98823529409999999" green="0.69803921570000005" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -459,6 +445,20 @@
                                     <segue destination="rDt-er-ubg" kind="embed" id="i4H-Db-YOC"/>
                                 </connections>
                             </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0D5-Jw-2W8">
+                                <rect key="frame" x="0.0" y="630" width="375" height="60"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.69803921570000005" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="dVg-qd-hdu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <state key="normal" title="완료">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionConfirm:" destination="FkV-cV-YCk" eventType="touchUpInside" id="H9I-Qg-Uq5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>

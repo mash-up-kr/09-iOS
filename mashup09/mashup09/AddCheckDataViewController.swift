@@ -12,6 +12,7 @@ class AddCheckDataViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
     
     @IBAction func actionClose(_ sender: UIBarButtonItem) {
@@ -20,6 +21,9 @@ class AddCheckDataViewController: UIViewController {
     
     @IBAction func actionConfirm(_ sender: UIButton) {
         DataManager.share.groupPurchaseData.append(DataManager.share.dummyData)
+        NotificationCenter.default.post(name: .dataAdded, object: nil)
         dismiss(animated: true)
     }
 }
+
+

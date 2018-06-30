@@ -10,6 +10,10 @@ import UIKit
 
 class Home09ItemsTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var itemImageView: UIImageView!
+    @IBOutlet weak var subjectLabel: UILabel!
+    @IBOutlet weak var contentLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -17,5 +21,11 @@ class Home09ItemsTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
-
+    
+    func configureCell(_ index: Int) {
+        let data = DataManager.share.groupPurchaseData[index]
+        itemImageView.image = data.itemImages.first
+        subjectLabel.text = data.subject
+        contentLabel.text = data.content
+    }
 }
