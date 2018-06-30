@@ -126,28 +126,51 @@
                                             <outlet property="collectionView" destination="T0q-wF-Gfc" id="Zbq-hX-5R5"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecentTabelViewCell" id="BWI-ba-iWj">
+                                        <rect key="frame" x="0.0" y="285" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BWI-ba-iWj" id="LBP-Ih-S9q">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="최신글" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bU-FH-Uef">
+                                                    <rect key="frame" x="20" y="12" width="335" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="3bU-FH-Uef" firstAttribute="top" secondItem="LBP-Ih-S9q" secondAttribute="top" constant="40" id="8bF-hV-dT4"/>
+                                                <constraint firstAttribute="trailing" secondItem="3bU-FH-Uef" secondAttribute="trailing" constant="20" id="SJv-95-zuK"/>
+                                                <constraint firstAttribute="bottom" secondItem="3bU-FH-Uef" secondAttribute="bottom" constant="8" id="TKL-7E-bVN"/>
+                                                <constraint firstItem="3bU-FH-Uef" firstAttribute="leading" secondItem="LBP-Ih-S9q" secondAttribute="leading" constant="20" id="kML-cD-4jl"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="60000" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Home09ItemsTableViewCell" rowHeight="103" id="nIg-dS-oZg" customClass="Home09ItemsTableViewCell" customModule="mashup09" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="285" width="375" height="103"/>
+                                        <rect key="frame" x="0.0" y="329" width="375" height="103"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nIg-dS-oZg" id="CpZ-ti-0ed">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="102.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="netflix-new-logo" translatesAutoresizingMaskIntoConstraints="NO" id="kUw-sw-4R7">
-                                                    <rect key="frame" x="20" y="20" width="70" height="70"/>
+                                                    <rect key="frame" x="20" y="20" width="105" height="70"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" secondItem="kUw-sw-4R7" secondAttribute="height" multiplier="1:1" id="S3T-Yr-kUo"/>
+                                                        <constraint firstAttribute="width" secondItem="kUw-sw-4R7" secondAttribute="height" multiplier="1.5:1" id="S3T-Yr-kUo"/>
                                                         <constraint firstAttribute="height" constant="70" id="kEv-KM-WBA"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="넷플릭스" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCd-JZ-tFx">
-                                                    <rect key="frame" x="105" y="20" width="250" height="21"/>
+                                                    <rect key="frame" x="140" y="20" width="215" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="넷플릭스 같이보실분 선착순 3명 모집합니다." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mt2-tj-GV3">
-                                                    <rect key="frame" x="105" y="45" width="250" height="40"/>
+                                                    <rect key="frame" x="140" y="45" width="215" height="40"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -185,11 +208,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="09" id="GKP-h3-bEv">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="qRr-Sh-YJi">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="69j-od-bLF">
-                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" style="plain" id="qRr-Sh-YJi">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="69j-od-bLF">
+                                <rect key="frame" x="314" y="0.0" width="45" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="총대매기">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="make">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -275,6 +299,7 @@
     <resources>
         <image name="IMG_2242" width="800" height="536"/>
         <image name="home" width="25" height="25"/>
+        <image name="make" width="45" height="45"/>
         <image name="netflix-new-logo" width="900" height="506"/>
         <image name="search" width="25" height="25"/>
         <namedColor name="Color-1">

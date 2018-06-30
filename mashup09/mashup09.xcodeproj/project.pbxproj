@@ -11,14 +11,14 @@
 		827C37E120E792F70050FA68 /* Input.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 827C37E020E792F70050FA68 /* Input.storyboard */; };
 		827C37E320E793290050FA68 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827C37E220E793290050FA68 /* InputViewController.swift */; };
 		829DB82E20E7ACB0005E7ECE /* InputTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829DB82D20E7ACB0005E7ECE /* InputTableViewController.swift */; };
-		EF3E94BD20E7952E00ECF5CB /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3E94BB20E7952E00ECF5CB /* HomeCollectionViewCell.swift */; };
-		EF3E94BE20E7952E00ECF5CB /* HomeCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3E94BC20E7952E00ECF5CB /* HomeCollectionTableViewCell.swift */; };
-		EF3E94C020E7968B00ECF5CB /* Home09ItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3E94BF20E7968B00ECF5CB /* Home09ItemsTableViewCell.swift */; };
-		EF3E94C220E79B7400ECF5CB /* TestAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF3E94C120E79B7400ECF5CB /* TestAssets.xcassets */; };
 		AAC2FEEA20E7907500686BC9 /* Add.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAC2FEE920E7907500686BC9 /* Add.storyboard */; };
 		AAC2FEEC20E7908E00686BC9 /* AddCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC2FEEB20E7908E00686BC9 /* AddCategoryViewController.swift */; };
 		AAC2FEEE20E792AC00686BC9 /* AddContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC2FEED20E792AC00686BC9 /* AddContentViewController.swift */; };
 		AAC2FEF020E792D600686BC9 /* AddDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC2FEEF20E792D600686BC9 /* AddDetailViewController.swift */; };
+		EF3E94BD20E7952E00ECF5CB /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3E94BB20E7952E00ECF5CB /* HomeCollectionViewCell.swift */; };
+		EF3E94BE20E7952E00ECF5CB /* HomeCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3E94BC20E7952E00ECF5CB /* HomeCollectionTableViewCell.swift */; };
+		EF3E94C020E7968B00ECF5CB /* Home09ItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3E94BF20E7968B00ECF5CB /* Home09ItemsTableViewCell.swift */; };
+		EF3E94C220E79B7400ECF5CB /* TestAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF3E94C120E79B7400ECF5CB /* TestAssets.xcassets */; };
 		EF6D1CEE20E787E50098FAD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6D1CED20E787E50098FAD3 /* AppDelegate.swift */; };
 		EF6D1CF020E787E50098FAD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6D1CEF20E787E50098FAD3 /* ViewController.swift */; };
 		EF6D1CF320E787E50098FAD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF6D1CF120E787E50098FAD3 /* Main.storyboard */; };

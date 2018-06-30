@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     enum Sections: Int {
         case collection
+        case itemsHeader
         case items
     
         static var count: Int { return Sections.items.hashValue + 1 }
@@ -43,6 +44,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         switch setctions {
         case .collection:
             return 1
+        case .itemsHeader:
+            return 1
         case .items:
             return 10
         }
@@ -55,6 +58,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         case .collection:
             guard let homeCollectionTableViewCell = tableView.dequeueReusableCell(withIdentifier: "HomeCollectionTableViewCell", for: indexPath) as? HomeCollectionTableViewCell else { return UITableViewCell() }
             return homeCollectionTableViewCell
+        case .itemsHeader:
+            let recentTableViewCell = tableView.dequeueReusableCell(withIdentifier: "RecentTabelViewCell", for: indexPath)
+            return recentTableViewCell
         case .items:
             guard let home09ItemsTableViewCell = tableView.dequeueReusableCell(withIdentifier: "Home09ItemsTableViewCell", for: indexPath) as? Home09ItemsTableViewCell else { return UITableViewCell() }
             return home09ItemsTableViewCell
