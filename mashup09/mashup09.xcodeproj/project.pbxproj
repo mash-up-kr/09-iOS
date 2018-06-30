@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		43113B434EF0537D13D5D878 /* Pods_mashup09.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDAF762678E4AD5D82733841 /* Pods_mashup09.framework */; };
+		EF3E94BD20E7952E00ECF5CB /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3E94BB20E7952E00ECF5CB /* HomeCollectionViewCell.swift */; };
+		EF3E94BE20E7952E00ECF5CB /* HomeCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3E94BC20E7952E00ECF5CB /* HomeCollectionTableViewCell.swift */; };
+		EF3E94C020E7968B00ECF5CB /* Home09ItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3E94BF20E7968B00ECF5CB /* Home09ItemsTableViewCell.swift */; };
+		EF3E94C220E79B7400ECF5CB /* TestAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF3E94C120E79B7400ECF5CB /* TestAssets.xcassets */; };
 		EF6D1CEE20E787E50098FAD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6D1CED20E787E50098FAD3 /* AppDelegate.swift */; };
 		EF6D1CF020E787E50098FAD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6D1CEF20E787E50098FAD3 /* ViewController.swift */; };
 		EF6D1CF320E787E50098FAD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF6D1CF120E787E50098FAD3 /* Main.storyboard */; };
@@ -20,6 +24,10 @@
 		A83331942CEF7DD778DEE687 /* Pods-mashup09.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mashup09.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mashup09/Pods-mashup09.debug.xcconfig"; sourceTree = "<group>"; };
 		BDAF762678E4AD5D82733841 /* Pods_mashup09.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mashup09.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA1C6EB75E1AD1BF06C1F6F5 /* Pods-mashup09.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mashup09.release.xcconfig"; path = "Pods/Target Support Files/Pods-mashup09/Pods-mashup09.release.xcconfig"; sourceTree = "<group>"; };
+		EF3E94BB20E7952E00ECF5CB /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		EF3E94BC20E7952E00ECF5CB /* HomeCollectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionTableViewCell.swift; sourceTree = "<group>"; };
+		EF3E94BF20E7968B00ECF5CB /* Home09ItemsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home09ItemsTableViewCell.swift; sourceTree = "<group>"; };
+		EF3E94C120E79B7400ECF5CB /* TestAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TestAssets.xcassets; sourceTree = "<group>"; };
 		EF6D1CEA20E787E50098FAD3 /* mashup09.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mashup09.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF6D1CED20E787E50098FAD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF6D1CEF20E787E50098FAD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,8 +81,12 @@
 			children = (
 				EF6D1CED20E787E50098FAD3 /* AppDelegate.swift */,
 				EF6D1CEF20E787E50098FAD3 /* ViewController.swift */,
+				EF3E94BC20E7952E00ECF5CB /* HomeCollectionTableViewCell.swift */,
+				EF3E94BB20E7952E00ECF5CB /* HomeCollectionViewCell.swift */,
+				EF3E94BF20E7968B00ECF5CB /* Home09ItemsTableViewCell.swift */,
 				EF6D1CF120E787E50098FAD3 /* Main.storyboard */,
 				EF6D1CF720E787E60098FAD3 /* Assets.xcassets */,
+				EF3E94C120E79B7400ECF5CB /* TestAssets.xcassets */,
 				EF6D1CF920E787E60098FAD3 /* LaunchScreen.storyboard */,
 				EF6D1CFC20E787E60098FAD3 /* Info.plist */,
 				EF6D1CF420E787E50098FAD3 /* mashup09.xcdatamodeld */,
@@ -153,6 +165,7 @@
 			files = (
 				EF6D1CFB20E787E60098FAD3 /* LaunchScreen.storyboard in Resources */,
 				EF6D1CF820E787E60098FAD3 /* Assets.xcassets in Resources */,
+				EF3E94C220E79B7400ECF5CB /* TestAssets.xcassets in Resources */,
 				EF6D1CF320E787E50098FAD3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,8 +221,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF6D1CF620E787E50098FAD3 /* mashup09.xcdatamodeld in Sources */,
+				EF3E94BE20E7952E00ECF5CB /* HomeCollectionTableViewCell.swift in Sources */,
+				EF3E94C020E7968B00ECF5CB /* Home09ItemsTableViewCell.swift in Sources */,
 				EF6D1CF020E787E50098FAD3 /* ViewController.swift in Sources */,
 				EF6D1CEE20E787E50098FAD3 /* AppDelegate.swift in Sources */,
+				EF3E94BD20E7952E00ECF5CB /* HomeCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,7 +373,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = mashup09/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = kr.co.mashup.mashup09;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -373,7 +392,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = mashup09/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = kr.co.mashup.mashup09;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
