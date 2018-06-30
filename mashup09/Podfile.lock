@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.7.2)
+  - ImagePicker (3.0.0)
   - Reachability (3.2)
   - SDWebImage (4.3.3):
     - SDWebImage/Core (= 4.3.3)
@@ -7,20 +8,23 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - ImagePicker
   - Reachability
   - SDWebImage
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - ImagePicker
     - Reachability
     - SDWebImage
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  ImagePicker: 973953c25960fe04729a7082a56194321c6762d2
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
 
-PODFILE CHECKSUM: 1382d5c14f5aa7740aed6c6b85619e8accc2765d
+PODFILE CHECKSUM: c7720a86e5b003d94ae6f235745a10f1f04de85d
 
 COCOAPODS: 1.5.3

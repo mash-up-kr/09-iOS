@@ -53,7 +53,7 @@ extension AddContentViewController: UITextFieldDelegate {
 
 // MARK: - UITextViewDelegate
 extension AddContentViewController: UITextViewDelegate {
-    func textViewShouldEndEditing(_ textView: UITextView) -> Bool {
+    func textViewDidChange(_ textView: UITextView) {
         if let text = textField.text,
             !text.isEmpty,
             !textView.text.isEmpty {
@@ -63,7 +63,11 @@ extension AddContentViewController: UITextViewDelegate {
             nextButton.backgroundColor = UIColor(red: 196/255, green: 196/255, blue: 196/255, alpha: 1.0)
             nextButtonDummyView.backgroundColor = UIColor(red: 196/255, green: 196/255, blue: 196/255, alpha: 1.0)
         }
+    }
+    
+    func textViewShouldEndEditing(_ textView: UITextView) -> Bool {
         textView.resignFirstResponder()
+        
         return true
     }
 }
