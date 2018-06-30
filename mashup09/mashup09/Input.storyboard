@@ -26,7 +26,7 @@
                                     <constraint firstAttribute="height" constant="60" id="bfd-Bp-zx0"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="다음">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -36,16 +36,24 @@
                                     <segue destination="Mx7-HA-3xn" kind="embed" id="GlE-Wu-miV"/>
                                 </connections>
                             </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6iz-lf-31M">
+                                <rect key="frame" x="0.0" y="778" width="375" height="34"/>
+                                <color key="backgroundColor" name="Color"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="115-TQ-9TZ" firstAttribute="trailing" secondItem="oTD-Hm-obC" secondAttribute="trailing" id="2Jr-tX-7gI"/>
+                            <constraint firstItem="6iz-lf-31M" firstAttribute="top" secondItem="115-TQ-9TZ" secondAttribute="bottom" id="NOP-89-npR"/>
                             <constraint firstItem="115-TQ-9TZ" firstAttribute="top" secondItem="QTG-sv-htE" secondAttribute="bottom" id="OPu-tL-5fn"/>
                             <constraint firstItem="QTG-sv-htE" firstAttribute="top" secondItem="oTD-Hm-obC" secondAttribute="top" id="Py9-bi-DgL"/>
                             <constraint firstItem="QTG-sv-htE" firstAttribute="trailing" secondItem="oTD-Hm-obC" secondAttribute="trailing" id="RIj-lR-uQc"/>
+                            <constraint firstItem="6iz-lf-31M" firstAttribute="leading" secondItem="R1b-mE-aUH" secondAttribute="leading" id="S2s-RX-dBw"/>
                             <constraint firstItem="115-TQ-9TZ" firstAttribute="leading" secondItem="oTD-Hm-obC" secondAttribute="leading" id="WKZ-HB-kHA"/>
                             <constraint firstItem="QTG-sv-htE" firstAttribute="leading" secondItem="oTD-Hm-obC" secondAttribute="leading" id="b7h-RY-fJm"/>
                             <constraint firstItem="115-TQ-9TZ" firstAttribute="bottom" secondItem="oTD-Hm-obC" secondAttribute="bottom" id="c8B-wj-dDH"/>
+                            <constraint firstAttribute="trailing" secondItem="6iz-lf-31M" secondAttribute="trailing" id="k4x-B8-FNG"/>
+                            <constraint firstAttribute="bottom" secondItem="6iz-lf-31M" secondAttribute="bottom" id="mH6-l7-7uy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oTD-Hm-obC"/>
                     </view>
@@ -65,7 +73,7 @@
         <scene sceneID="dH2-hq-ErP">
             <objects>
                 <tableViewController id="Mx7-HA-3xn" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Agj-1Q-VZH">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Agj-1Q-VZH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="630"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -76,7 +84,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ztA-Zc-Caj" id="bbx-VX-DhC">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="예금주명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hL4-6B-Nnk">
@@ -107,7 +115,7 @@
                                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="c5R-Zj-hZi" id="wyf-Cf-Ptc">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RP4-tL-jE5">
@@ -138,7 +146,7 @@
                                         <rect key="frame" x="0.0" y="88" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CeX-8R-ce1" id="fgJ-zH-Jy4">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="계좌번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0F1-a2-VUP">
