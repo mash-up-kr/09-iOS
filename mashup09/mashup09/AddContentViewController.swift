@@ -31,6 +31,11 @@ class AddContentViewController: UIViewController {
     }
     
     @IBAction func actionSelectImage(_ sender: UIButton) {
+        if let subject = textField.text {
+            DataManager.share.dummyData.subject = subject
+            DataManager.share.dummyData.content = textView.text
+        }
+        
         let imagePickerController = ImagePickerController()
         imagePickerController.delegate = self
         present(imagePickerController, animated: true)
@@ -45,9 +50,11 @@ extension AddContentViewController: UITextFieldDelegate {
             !textView.text.isEmpty {
                 selectButton.backgroundColor = UIColor(red: 252/255, green: 178/255, blue: 57/255, alpha: 1.0)
             selectButtonDummyView.backgroundColor = UIColor(red: 252/255, green: 178/255, blue: 57/255, alpha: 1.0)
+            selectButton.isEnabled = true
         } else {
             selectButton.backgroundColor = UIColor(red: 196/255, green: 196/255, blue: 196/255, alpha: 1.0)
             selectButtonDummyView.backgroundColor = UIColor(red: 196/255, green: 196/255, blue: 196/255, alpha: 1.0)
+            selectButton.isEnabled = false
         }
         textField.resignFirstResponder()
         return true
@@ -62,9 +69,11 @@ extension AddContentViewController: UITextViewDelegate {
             !textView.text.isEmpty {
             selectButton.backgroundColor = UIColor(red: 252/255, green: 178/255, blue: 57/255, alpha: 1.0)
             selectButtonDummyView.backgroundColor = UIColor(red: 252/255, green: 178/255, blue: 57/255, alpha: 1.0)
+            selectButton.isEnabled = true
         } else {
             selectButton.backgroundColor = UIColor(red: 196/255, green: 196/255, blue: 196/255, alpha: 1.0)
             selectButtonDummyView.backgroundColor = UIColor(red: 196/255, green: 196/255, blue: 196/255, alpha: 1.0)
+            selectButton.isEnabled = false
         }
     }
     
@@ -83,6 +92,8 @@ extension AddContentViewController: ImagePickerDelegate {
     
     func doneButtonDidPress(_ imagePicker: ImagePickerController, images: [UIImage]) {
         print("doneButtonDidPress")
+        
+        DataManager.share.dummyData.itemImages = images
         dismiss(animated: true) { [weak self] in
             self?.performSegue(withIdentifier: "AddDetailSegue", sender: nil)
         }
